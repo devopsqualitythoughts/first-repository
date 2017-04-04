@@ -1,0 +1,409 @@
+# See 'puppet help' for help on available puppet subcommands
+** PS C:\Users\Usrikanth> puppet module generate (organisation name)qt-newmodule(modulenme) 
+We need to create a metadata.json file for this module.  Please answer the
+following questions; if the question is not applicable to this module, feel free
+to leave it blank.
+
+Puppet uses Semantic Versioning (semver.org) to version modules.
+What version is this module?  [0.1.0]
+-->
+
+Who wrote this module?  [qt]
+--> qt
+
+What license does this module code fall under?  [Apache-2.0]
+-->
+
+How would you describe this module in a single sentence?
+--> HI this is first module creation
+
+Where is this module's source code repository?
+-->
+
+Where can others go to learn more about this module?
+-->
+
+Where can others go to file issues about this module?
+-->
+
+----------------------------------------
+{
+  "name": "qt-newmodule",
+  "version": "0.1.0",
+  "author": "qt",
+  "summary": "HI this is first module creation",
+  "license": "Apache-2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+----------------------------------------
+
+About to generate this metadata; continue? [n/Y]
+--> y
+
+Notice: Generating module at C:\Users\USrikanth/newmodule...
+Notice: Populating templates...
+Finished; module generated in newmodule.
+newmodule/examples
+newmodule/examples/init.pp
+newmodule/Gemfile
+newmodule/manifests
+newmodule/manifests/init.pp
+newmodule/metadata.json
+newmodule/Rakefile
+newmodule/README.md
+newmodule/spec
+newmodule/spec/classes
+newmodule/spec/classes/init_spec.rb
+newmodule/spec/spec_helper.rb
+**PS C:\Users\Usrikanth> cd newmodule
+**PS C:\Users\Usrikanth\newmodule> ls
+
+
+    Directory: C:\Users\Usrikanth\newmodule
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         03-Apr-17   3:10 PM            examples
+d----         03-Apr-17   3:10 PM            manifests
+d----         03-Apr-17   3:10 PM            spec
+-a---         03-Apr-17   3:10 PM        492 Gemfile
+-a---         03-Apr-17   3:10 PM        339 metadata.json
+-a---         03-Apr-17   3:10 PM        951 Rakefile
+-a---         03-Apr-17   3:10 PM       3268 README.md
+
+
+**PS C:\Users\Usrikanth\newmodule> cd .\examplesx
+cd : Cannot find path 'C:\Users\Usrikanth\newmodule\examplesx' because it does n
+At line:1 char:1
++ cd .\examplesx
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Usrikanth\newmodule\exam
+   oundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLoca
+
+**PS C:\Users\Usrikanth\newmodule> cd .\examples
+**PS C:\Users\Usrikanth\newmodule\examples> ls
+
+
+    Directory: C:\Users\Usrikanth\newmodule\examples
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---         03-Apr-17   3:10 PM        522 init.pp
+
+
+PS C:\Users\Usrikanth\newmodule\examples> notepad .\init.pp
+PS C:\Users\Usrikanth\newmodule\examples> cd ..
+PS C:\Users\Usrikanth\newmodule> cd .\manifests
+PS C:\Users\Usrikanth\newmodule\manifests> ls
+
+
+    Directory: C:\Users\Usrikanth\newmodule\manifests
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---         03-Apr-17   3:10 PM       1108 init.pp
+
+
+**PS C:\Users\Usrikanth\newmodule\manifests> notepad .\init.pp
+**PS C:\Users\Usrikanth\newmodule\manifests> code .\init.pp
+**PS C:\Users\Usrikanth\newmodule\manifests> cd ..
+**PS C:\Users\Usrikanth\newmodule> code .
+**PS C:\Users\Usrikanth\newmodule> history
+
+Id CommandLine
+-- -----------
+ 1 puppet -V
+ 2 cd./modules
+ 3 cd puppet
+ 4 cd..
+ 5 cd..
+ 6 cd..
+ 7 cd puppet
+ 8 cd Users
+ 9 cd puppet
+10 puppet module generate helloworld
+11 cd Usrikanth
+12 puppet module generate <puppetmodule>-<modulename>
+13 puppet module generate <puppetmodule>-<modulename>
+14 puppet agent version
+15 puppet agent --version
+16 puppet agent
+17 y
+18 puppet config print environmentpath
+19 cd puppetlabs/etc/code/environments
+20 cd .puppetlabs/etc/code/environments
+21 cd puppetlabs
+22 puppet module config apache
+23 puppet help
+24 puppet module
+25 puppet help module
+26 puppet module install C:/Users/USrikanth/.puppetlabs/etc/code/environments
+27 puppet module install .puppetlabs/etc/code/environments
+28 puppet module install puppetlabs/etc/code/environments
+29 puppet module install etc/code/environments
+30 puppet resource package
+31 puppet resources user Usrikanth
+32 puppet module generate qt-newmodule
+33 cd newmodule
+34 ls
+35 cd .\examplesx
+36 cd .\examples
+37 ls
+38 notepad .\init.pp
+39 cd ..
+40 cd .\manifests
+41 ls
+42 notepad .\init.pp
+43 code .\init.pp
+44 cd ..
+45 code .
+
+
+ C:\Users\Usrikanth\newmodule> puppet config print evironment
+
+ C:\Users\Usrikanth\newmodule> puppet config print evironmentpath
+
+ C:\Users\Usrikanth\newmodule> puppet config print evironmentpath
+
+ C:\Users\Usrikanth\newmodule> puppet config print evironment path
+ironment =
+th = none
+ C:\Users\Usrikanth\newmodule> puppet config print evironment
+
+ C:\Users\Usrikanth\newmodule> ls
+
+
+  Directory: C:\Users\Usrikanth\newmodule
+
+
+de                LastWriteTime     Length Name
+--                -------------     ------ ----
+---         03-Apr-17   3:10 PM            examples
+---         03-Apr-17   3:10 PM            manifests
+---         03-Apr-17   3:10 PM            spec
+---         03-Apr-17   3:10 PM        492 Gemfile
+---         03-Apr-17   3:10 PM        339 metadata.json
+---         03-Apr-17   3:10 PM        951 Rakefile
+---         03-Apr-17   3:10 PM       3268 README.md
+
+SECOND MODULE 
+=============
+
+PS C:\Users\Usrikanth\newmodule> puppet module
+Error: 'module' has no default action.  See `puppet help module`.
+PS C:\Users\Usrikanth\newmodule> code .
+PS C:\Users\Usrikanth\newmodule> puppet -V
+4.9.4
+PS C:\Users\Usrikanth\newmodule> puppet module generate qt-secondmodule
+We need to create a metadata.json file for this module.  Please answer the
+following questions; if the question is not applicable to this module, feel free
+to leave it blank.
+
+Puppet uses Semantic Versioning (semver.org) to version modules.
+What version is this module?  [0.1.0]
+-->
+
+Who wrote this module?  [qt]
+--> qt
+
+What license does this module code fall under?  [Apache-2.0]
+-->
+
+How would you describe this module in a single sentence?
+--> This is my second created module
+
+Where is this module's source code repository?
+--> F:\Practise Folders
+
+Where can others go to learn more about this module?
+-->
+
+Where can others go to file issues about this module?
+-->
+
+----------------------------------------
+{
+  "name": "qt-secondmodule",
+  "version": "0.1.0",
+  "author": "qt",
+  "summary": "This is my second created module",
+  "license": "Apache-2.0",
+  "source": "F:\\Practise Folders",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+----------------------------------------
+
+About to generate this metadata; continue? [n/Y]
+--> y
+
+Notice: Generating module at C:\Users\USrikanth\newmodule/secondmodule...
+Notice: Populating templates...
+Finished; module generated in secondmodule.
+secondmodule/examples
+secondmodule/examples/init.pp
+secondmodule/Gemfile
+secondmodule/manifests
+secondmodule/manifests/init.pp
+secondmodule/metadata.json
+secondmodule/Rakefile
+secondmodule/README.md
+secondmodule/spec
+secondmodule/spec/classes
+secondmodule/spec/classes/init_spec.rb
+secondmodule/spec/spec_helper.rb
+PS C:\Users\Usrikanth\newmodule> cd ..
+PS C:\Users\Usrikanth> ls
+
+
+    Directory: C:\Users\Usrikanth
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         03-Sep-15  10:12 AM            .AndroidStudio1.3
+d----         14-Apr-16   1:10 PM            .eclipse
+d----         03-Sep-15  10:23 AM            .gradle
+d----         03-Apr-17   9:48 AM            .Icecream Screen Recorder
+d----         10-Feb-16   6:34 PM            .p2
+d----         31-Mar-17  10:39 AM            .puppetlabs
+d----         30-Mar-17  12:30 PM            .ssh
+d----         31-Mar-17  10:53 AM            .vscode
+d----         20-Mar-17  11:36 AM            AndroidStudioProjects
+d-r--         18-Oct-16  10:46 AM            Contacts
+d-r--         03-Apr-17  11:34 AM            Desktop
+d-r--         03-Apr-17  12:10 PM            Documents
+d-r--         03-Apr-17  11:46 AM            Downloads
+d-r--         18-Oct-16  10:46 AM            Favorites
+d-r--         01-Sep-16   7:19 AM            Google Drive
+d-r--         18-Oct-16  10:46 AM            Links
+d-r--         18-Oct-16  10:46 AM            Music
+d----         03-Apr-17   4:10 PM            newmodule
+dar--         03-Apr-17   9:12 AM            OneDrive
+d-r--         03-Apr-17  11:29 AM            Pictures
+d-r--         18-Oct-16  10:46 AM            Saved Games
+d-r--         18-Oct-16  10:46 AM            Searches
+d----         15-Aug-15   8:29 PM            SupTab
+d-r--         27-Feb-17   1:12 PM            Videos
+d----         03-Sep-15  10:20 PM            workspace
+-a---         02-Apr-17   9:08 PM      10912 .bash_history
+-a---         04-Feb-16   3:21 PM        600 PUTTY.RND
+
+
+PS C:\Users\Usrikanth> dir
+
+
+    Directory: C:\Users\Usrikanth
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         03-Sep-15  10:12 AM            .AndroidStudio1.3
+d----         14-Apr-16   1:10 PM            .eclipse
+d----         03-Sep-15  10:23 AM            .gradle
+d----         03-Apr-17   9:48 AM            .Icecream Screen Recorder
+d----         10-Feb-16   6:34 PM            .p2
+d----         31-Mar-17  10:39 AM            .puppetlabs
+d----         30-Mar-17  12:30 PM            .ssh
+d----         31-Mar-17  10:53 AM            .vscode
+d----         20-Mar-17  11:36 AM            AndroidStudioProjects
+d-r--         18-Oct-16  10:46 AM            Contacts
+d-r--         03-Apr-17  11:34 AM            Desktop
+d-r--         03-Apr-17  12:10 PM            Documents
+d-r--         03-Apr-17  11:46 AM            Downloads
+d-r--         18-Oct-16  10:46 AM            Favorites
+d-r--         01-Sep-16   7:19 AM            Google Drive
+d-r--         18-Oct-16  10:46 AM            Links
+d-r--         18-Oct-16  10:46 AM            Music
+d----         03-Apr-17   4:10 PM            newmodule
+dar--         03-Apr-17   9:12 AM            OneDrive
+d-r--         03-Apr-17  11:29 AM            Pictures
+d-r--         18-Oct-16  10:46 AM            Saved Games
+d-r--         18-Oct-16  10:46 AM            Searches
+d----         15-Aug-15   8:29 PM            SupTab
+d-r--         27-Feb-17   1:12 PM            Videos
+d----         03-Sep-15  10:20 PM            workspace
+-a---         02-Apr-17   9:08 PM      10912 .bash_history
+-a---         04-Feb-16   3:21 PM        600 PUTTY.RND
+
+
+PS C:\Users\Usrikanth> cd newmodule
+PS C:\Users\Usrikanth\newmodule> cd secondmodule
+PS C:\Users\Usrikanth\newmodule\secondmodule> dir
+
+
+    Directory: C:\Users\Usrikanth\newmodule\secondmodule
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         03-Apr-17   4:10 PM            examples
+d----         03-Apr-17   4:10 PM            manifests
+d----         03-Apr-17   4:10 PM            spec
+-a---         03-Apr-17   4:10 PM        492 Gemfile
+-a---         03-Apr-17   4:10 PM        362 metadata.json
+-a---         03-Apr-17   4:10 PM        951 Rakefile
+-a---         03-Apr-17   4:10 PM       3292 README.md
+
+
+PS C:\Users\Usrikanth\newmodule\secondmodule> cd examples
+PS C:\Users\Usrikanth\newmodule\secondmodule\examples> notepad .examples
+PS C:\Users\Usrikanth\newmodule\secondmodule\examples> notepad examples
+PS C:\Users\Usrikanth\newmodule\secondmodule\examples> cd ./examples(OPEN THE EXAMPLE FILE)
+cd : Cannot find path 'C:\Users\Usrikanth\newmodule\secondmodule\examples\examples' because it does not exist.
+At line:1 char:1
++ cd ./examples
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Usrika...amples\examples:String) [Set-Location], ItemNotFound
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Usrikanth\newmodule\secondmodule\examples> cd ..
+PS C:\Users\Usrikanth\newmodule\secondmodule> cd .\examples
+PS C:\Users\Usrikanth\newmodule\secondmodule\examples> ls
+
+
+    Directory: C:\Users\Usrikanth\newmodule\secondmodule\examples
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---         03-Apr-17   4:10 PM        525 init.pp
+
+
+PS C:\Users\Usrikanth\newmodule\secondmodule\examples> ls
+
+
+    Directory: C:\Users\Usrikanth\newmodule\secondmodule\examples
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---         03-Apr-17   4:10 PM        525 init.pp
+
+
+PS C:\Users\Usrikanth\newmodule\secondmodule\examples> notepad .\init.pp
+PS C:\Users\Usrikanth\newmodule\secondmodule\examples> cd..
+PS C:\Users\Usrikanth\newmodule\secondmodule> code .\examples
+PS C:\Users\Usrikanth\newmodule\secondmodule> puppet agent version
+Error: Could not prepare for execution: The puppet agent command does not take parameters
+PS C:\Users\Usrikanth\newmodule\secondmodule> puppet agent
+
+
+
+
+
