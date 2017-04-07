@@ -1,7 +1,7 @@
-# Class: secondmodule
+# Class: homework
 # ===========================
 #
-# Full description of class secondmodule here.
+# Full description of class homework here.
 #
 # Parameters
 # ----------
@@ -28,7 +28,7 @@
 # --------
 #
 # @example
-#    class { 'secondmodule':
+#    class { 'homework':
 #      servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
 #    }
 #
@@ -42,7 +42,8 @@
 #
 # Copyright 2017 Your name here, unless otherwise noted.
 #
-class secondmodule {
+class homework {
+    include homework::printnumb
 
 
 }

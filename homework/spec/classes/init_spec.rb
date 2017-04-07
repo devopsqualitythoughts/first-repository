@@ -1,6 +1,6 @@
 require 'spec_helper'
-describe 'secondmodule' do
+describe 'homework' do
   context 'with default values for all parameters' do
-    it { should contain_class('secondmodule') }
+    it { should contain_class('homework') }
   end
 end

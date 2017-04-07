@@ -1,0 +1,15 @@
+{
+  "name": "qt-homework",
+  "version": "0.1.0",
+  "author": "qt",
+  "summary": "printing 0123450678910 using notify",
+  "license": "Apache-2.0",
+  "source": "https://github.com/devopsqualitythoughts/first-repository.git",
+  "project_page": "https://github.com/devopsqualitythoughts/first-repository",
+  "issues_url": "https://github.com/devopsqualitythoughts/first-repository/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
